@@ -1,0 +1,378 @@
+@import 'mixin.scss';
+@media screen and (max-width:1431px) 
+{
+    .box{
+        p{
+            @include text(justify,1.32vw);
+            margin: 0px auto;
+        }
+    }
+}
+@media screen and (max-width:1280px){ // for projects section
+.project{
+    width: 480px;
+    height: 270px;
+    margin: 15px;
+}
+
+}
+@media  screen and  (max-width: 1250px){ // custom resolution for services overlapping with bottom icon
+    .service-box{
+        p{
+            font-size: 18.5px;
+        }
+    }
+
+}
+@media  screen and  (max-width: 1205px){ // CUSTOM RESOLUTION FOR HOME BRAIKING
+    #author-picture{
+        width: 240px;
+        height: 240px;
+    }
+    #name-container{
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .icon{  
+                font-size: 8px;
+        }
+    }
+    .box{
+        height: auto;
+    }
+    
+}
+@media  screen and  (max-width: 1134px){
+    .seo{
+        display: none;
+    }
+    .res{
+        display: block;
+    }
+
+    .small-title{
+        margin: 5px auto;
+        @include text(center,1.8vw);
+    }
+    .icon-hold{
+        i{
+            font-size: 7vh;
+        }
+    }
+    
+ }
+@media  screen and  (max-width: 1115px){ // CUSTOM RESOLUTION FOR HOME BRAIKING AND CONTACT INFO BREAKING
+    #author-picture{
+        width: 220px;
+        height: 220px;
+      
+    }
+    #name-container{
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .icon{  
+            font-size: 8px;
+        }
+    }
+    #contact-text-container{
+       div{
+           p{
+               margin-left:35px;
+           }
+       }
+    }    
+    .contact-icon{
+        font-size: 35px;
+    }
+    #mg-1{
+        margin-left:100px;
+    }
+
+}
+
+@media screen and (max-width: 1029px) {
+
+    #author-picture{
+        width: 220px;
+        height: 220px;
+      
+    }
+    .center-home{
+      
+        width: 90%;
+
+    }
+    header{
+        width: 100%; //80%
+    }
+    #name-container{
+        h1{
+            font-size: 32px;
+        }
+        h2{
+            font-size: 22px;
+        }
+        .icon{  
+            font-size: 8px;
+        }
+    }
+    .box{
+        height: 420px;
+    }
+    #basic-info{
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
+        p{
+            @include text(justify,18px);
+        } 
+    }
+    #information{
+        width: 80%;
+        height: auto;
+        p{
+            @include text(justify,18px);
+        } 
+    }
+    .skill{
+        width: 200px;
+        height: 200px;
+        margin: 13px;
+    }
+    .contact-responsive{
+        width: 90% ;
+        flex-direction: column-reverse;
+    }
+    #contact-text-container{
+        margin-top: 50px;
+        height: 300px;
+        width: 100%;
+        div{
+            justify-content: center;
+        }
+    }
+ 
+    #form{
+        width: 80%;
+    }
+
+}
+
+@media  screen and  (max-width: 999px){ // services text going out of the box changing the structure!
+
+    .services-responsive{
+        flex-direction: column;
+         flex-wrap: nowrap;
+    }
+    .service-box{
+        width: 80%;
+        height: auto;
+        p{
+            font-size: 22px;
+        }
+    }
+    .icon-hold{
+        i{
+            font-size: 100px;
+        }
+    }
+    .small-title {
+        margin: 10px auto;
+        font-size: 2.5vh;
+    }
+
+
+}
+
+@media  screen and  (max-width: 769px){
+    header{
+        width: 100%; //80% //92%
+    }
+    .center-home{
+        flex-direction: column;
+    }
+    .vl{
+        display: none;
+    }
+     #author-picture{
+        width: 200px;
+        height: 200px;
+    }
+    .info-responsive{
+        @include center;
+        @include d-flex(flex-start ,center,nowrap);
+        flex-direction: column;
+    }
+    .big-letters{
+        font-size: 40px;
+    }
+    .hr{
+        width: 40%;
+    }   
+    .hr2{
+        width: 40%;
+    }   
+    .title{
+        @include title(18px);
+        h2{
+            font-size: 36px;
+        }
+    }
+    #form{
+        width: 90%;
+    }
+
+
+}
+@media screen and (max-width:690px){ //custom lazy breakpoint! HOME BREAKPOINT!!!
+    header{
+        width: 100%;
+        height: auto;
+        padding-bottom: 3%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-radius: 0px 0px 100px 100px;
+    }
+    nav{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+        ul{
+            
+            flex-direction: column;
+            align-items: center;
+            // flex-wrap: nowrap;
+            li{
+                margin: 5px 0px;
+                border-bottom: 2px solid white;
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:590px){ // home breakpoint idk y
+    header{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .center-home{
+        flex-direction: row;
+    }
+    nav{
+        padding: 0px;
+        ul{
+            
+            flex-direction: column;
+            align-items: center;
+            // flex-wrap: nowrap;
+            li{
+                margin: 5px 0px;
+                border-bottom: 2px solid white;
+                font-size: 22px;
+            }
+        }
+    }
+    #author-picture{
+        width: 200px;
+        height: 200px;
+    }
+    #name-container{
+        text-align: center;
+        h1{
+            font-size: 28px;
+        }
+        h2{
+            font-size: 18px;
+        }
+      
+    }
+    .service-box{
+        width: 100%;
+        height: auto;
+        p{
+            font-size: 22px;
+        }
+    }
+    .icon-hold{
+        i{
+            font-size: 110px;
+        }
+    }
+
+    
+}
+@media screen and (max-width:481px){ //////// MAYBE CHANGE TO 426!!!!!!!!!!!!!!
+
+    .big-letters{
+        font-size: 40px;
+    }
+    .hr{
+        width: 70%;
+    }   
+    .hr2{
+        width: 70%;
+    }   
+    .title{
+        @include title(18px);
+        width: 90%;
+    }
+
+    #basic-info{
+        width: 100%;
+        outline: 0px;
+        // height: auto;
+        margin-bottom: 20px;
+
+        p{
+            @include text(justify,17px);
+        } 
+    }
+    #information{
+        width: 100%;
+        outline: 0px;
+        // height: auto;
+        p{
+            @include text(justify,17px);
+        } 
+    }
+    .center{
+        width: 87%;
+    }
+    .skill{
+        width: 155px;
+        height: 155px;
+        margin: 14px;
+    }
+    .percentage,.percentage80,.percentage85,.percentage90, .percentage40,.percentage50,.percentage55, .percentage70,.percentage60 {
+        p{
+            @include text(center,35px);
+        }
+    }
+    .contact-responsive{
+        width: 93%!important;
+    }
+    #form{
+        width: 100%;
+    }
+    
+
+}
+@media screen and (max-width:481px){
+
+    #contact-text-container{
+        margin-top: 20px;
+    }
+}

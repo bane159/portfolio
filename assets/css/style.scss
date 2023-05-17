@@ -1,0 +1,312 @@
+@import "mixin.scss";
+@import "var.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+// @import "responsive.scss";
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    // overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+p{
+    color: #fff;
+}
+.test{
+outline: 3px solid black;
+}
+header{
+    @include d-flex(center,center,nowrap);
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    height: 500px;
+    background-color: $plava-boja;
+    border-radius: 0px 0px 50% 50%;
+    // background-image: linear-gradient(rgba(255,255,255,0.8),$plava-boja,rgba(255,255,255,0.45));
+    background-image: linear-gradient($plava-boja,$plava-boja,$pozadina);
+
+}
+nav{
+    @include d-flex(center,center);
+    // align-items: center;
+    box-sizing: border-box;
+    // height: 50px;
+    padding-top: 20px;
+    // background-color: red;
+    ul{
+        @include d-flex(center,center);
+        li{
+            margin: 0px 10px;
+            font-size: 25px;
+            font-weight:500;
+        }
+    }
+}
+// .h1{
+//     border-bottom:1px solid black; 
+// }
+.center-home{
+    @include d-flex(space-evenly,center);
+
+    width: 82%;
+    height: 80%;
+    // margin-top: calc(500px / 8);
+    // background-color: red;
+}
+#author-picture{
+    @include radius(50%);
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    // z-index: 2;
+}
+#name-container{
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .icon{  
+        font-size: 12px;
+    }
+}
+.title{
+    @include title(20px);
+    h2{
+        color: #fff;
+        font-size: 40px;
+    }
+    h1{
+        color: $plava-boja;
+        font-size: 40px;
+    }
+}
+.responsive-contact{
+    display: none;
+}
+.center{
+    @include center;
+    @include d-flex(space-around ,center);
+}
+
+.hr{
+    @include hr(30%);
+    
+}
+
+.big-letters{
+    font-size: 40px;
+}
+.vl{
+    display: none;
+    height: 450px;
+    width: 8px;
+    background-color: #000;
+    @include radius(10px);
+}
+
+.box{
+      @include info;
+    // background-color: green;
+    p{
+        @include text(justify,19px);
+    } 
+}
+#background{
+    // background-image: url(../pictures/blue-smooth-textured-paper-background.jpg);
+    @include radius(10px);
+    background-color: #2e3744;
+    width: 100%;
+    height: auto;
+}
+#skills-container{
+    @include d-flex(space-evenly,center,wrap);
+    width: 100%;
+
+    // background-color: red;
+}
+.skills-box{
+    @include d-flex(center,center,nowrap);
+    flex-direction: column;
+    h1{
+        color: #fff;
+    }
+  
+}
+.hr2{
+    @extend .hr;
+    background-image: linear-gradient(to right,$plava-boja, $pozadina);
+}
+.skill{
+    width: 220px;
+    height: 220px;
+    margin: 15px;
+    //^^^^^^^^^^^^ RESPONSIVE VALUES!
+    background-color: $plava-boja;
+    @include radius(50%);
+    position: relative;
+    h1{
+        color: #fff;
+    }
+}
+.percentage{
+    @include radius(50%);
+    @include d-flex(center,center);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: $tamno-plava;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p{
+        @include text(center,40px);
+        color: #fff;
+    }
+}
+.percentage85{
+    @extend .percentage;
+    width: 85%;
+    height: 85%;
+}
+.percentage90{
+    @extend .percentage;
+    width: 90%;
+    height: 90%;
+}
+
+.percentage55{
+    @extend .percentage;
+    width: 55%;
+    height: 55%;
+}
+.percentage70{
+    @extend .percentage;
+    width: 70%;
+    height: 70%;
+}
+.percentage50{
+    @extend .percentage;
+    width: 50%;
+    height: 50%;
+}
+
+.project-container{
+    @include d-flex(space-evenly,center,wrap);
+    width: 100%;
+
+}
+.project{
+    @include radius(10px);
+    width: 480px;
+    height: 270px;
+    margin: 15px;
+    background-color: black;
+}
+.services-responsive{
+    @include d-flex(space-evenly,center,wrap);
+    margin-top: 30px;
+}
+.service-box{
+    @include radius(15px);
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 45%;
+    height: 350px;
+    // background-color: red;
+    p{
+        @include text(center,20px);
+        color: #fff;
+    }
+}
+.res{
+    display: none;
+}
+.icon-hold{
+    text-align: center;
+    margin: 0px auto;
+    i{
+        font-size: 80px;
+    }
+}
+.small-title{
+    @include text(center,20px);
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    color: $plava-boja;
+}
+#contact-responsive{
+    @include d-flex(space-evenly, center);
+}
+#contact-text-container{
+    @include d-flex(space-evenly, center,nowrap);
+    flex-direction: column;
+    width: 35%;
+    height: 420px; 
+    // background-color: red;
+    p{
+        @include text(center,20px);
+        color: #000;
+        margin-left:20px;
+    }
+    div{
+        @include d-flex(flex-start,center);
+        width: 100%;
+    }
+
+}
+.contact-icon{
+    font-size: 40px;
+    color: #000;
+}
+
+#form{
+    width: 50%;
+    height: 420px;
+    // background-color: red;
+}
+.btn{
+    @include d-flex(center,center);
+    input{
+        @include radius(10px);
+        @include text(center,20px);
+        background-color: $plava-boja;
+        border: none;
+        height: 50px;
+        width: 100px;
+    }
+}
+
+.text-form{
+    input{
+        @include radius(7px);
+        width: 100%;
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 15px;
+        margin-bottom: 20px ;
+        box-sizing: border-box;
+    }
+
+}
+
+textarea{
+    @include radius(7px);
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    padding: 10px ;
+    font-size: 15px;
+    /* border: none; */
+    resize: none;
+}
+//smanji vel  contact-text-container slova i ikone
