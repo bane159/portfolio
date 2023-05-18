@@ -205,6 +205,9 @@
         width: 200px;
         height: 200px;
     }
+    #name-container{
+        color: #fff;
+    }
     .info-responsive{
         @include center;
         @include d-flex(flex-start ,center,nowrap);

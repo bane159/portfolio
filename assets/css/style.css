@@ -5,6 +5,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -14,10 +15,6 @@ img {
 
 p {
   color: #fff;
-}
-
-.test {
-  outline: 3px solid black;
 }
 
 header {
@@ -32,6 +29,15 @@ header {
   background-color: #97DEFF;
   border-radius: 0px 0px 50% 50%;
   background-image: linear-gradient(#97DEFF, #97DEFF, #2e3744);
+}
+
+footer {
+  -webkit-clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 120px;
+  background-color: #97DEFF;
+  margin-top: 40px;
 }
 
 nav {
@@ -52,6 +58,12 @@ nav ul li {
   margin: 0px 10px;
   font-size: 25px;
   font-weight: 500;
+}
+nav ul li a {
+  color: #000;
+}
+nav ul li a:hover {
+  color: #2541B2;
 }
 
 .center-home {
@@ -359,4 +371,18 @@ textarea {
   font-size: 15px;
   /* border: none; */
   resize: none;
+}
+
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.test2 {
+  width: 130px;
+  height: 130px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

@@ -170,6 +170,9 @@
     width: 200px;
     height: 200px;
   }
+  #name-container {
+    color: #fff;
+  }
   .info-responsive {
     width: 80%;
     margin: 0px auto;
