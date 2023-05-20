@@ -340,7 +340,7 @@
         margin-bottom: 20px;
 
         p{
-            @include text(justify,17px);
+            @include text(justify,14px);
         } 
     }
     #information{
@@ -348,7 +348,7 @@
         outline: 0px;
         // height: auto;
         p{
-            @include text(justify,17px);
+            @include text(justify,14px);
         } 
     }
     .center{

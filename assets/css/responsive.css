@@ -175,7 +175,7 @@
   }
   .info-responsive {
     width: 80%;
-    margin: 0px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -299,7 +299,7 @@
   }
   #basic-info p {
     text-align: justify;
-    font-size: 17px;
+    font-size: 14px;
   }
   #information {
     width: 100%;
@@ -307,7 +307,7 @@
   }
   #information p {
     text-align: justify;
-    font-size: 17px;
+    font-size: 14px;
   }
   .center {
     width: 87%;

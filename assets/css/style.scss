@@ -92,6 +92,7 @@ nav{
 }
 .title{
     @include title(20px);
+    margin-bottom: 50px;
     h2{
         color: #fff;
         font-size: 40px;
@@ -150,6 +151,7 @@ nav{
     flex-direction: column;
     h1{
         color: #fff;
+        font-weight: 300;
     }
   
 }
