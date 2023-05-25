@@ -1,4 +1,7 @@
 @media screen and (max-width: 1431px) {
+  .box {
+    height: auto;
+  }
   .box p {
     text-align: justify;
     font-size: 1.32vw;
@@ -65,14 +68,11 @@
   #name-container .icon {
     font-size: 8px;
   }
-  #contact-text-container div p {
-    margin-left: 35px;
+  #contact-text-container div {
+    width: 100%;
   }
   .contact-icon {
     font-size: 35px;
-  }
-  #mg-1 {
-    margin-left: 100px;
   }
 }
 @media screen and (max-width: 1029px) {
@@ -137,23 +137,31 @@
   }
 }
 @media screen and (max-width: 999px) {
-  .services-responsive {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
   .service-box {
-    width: 80%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
   }
   .service-box p {
-    font-size: 22px;
+    font-size: 15px;
+  }
+  .icon-hold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
   }
   .icon-hold i {
-    font-size: 100px;
+    width: 100%;
+    height: 100%;
+    font-size: 60px; /* Adjust the font size as needed */
   }
   .small-title {
     margin: 10px auto;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
   }
 }
 @media screen and (max-width: 769px) {
@@ -194,7 +202,7 @@
   .title {
     font-size: 18px;
     width: 80%;
-    margin: 10px auto;
+    margin: 50px auto;
   }
   .title h2 {
     font-size: 36px;
@@ -202,11 +210,15 @@
   #form {
     width: 90%;
   }
+  .icons a {
+    padding: 0px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 690px) {
   header {
     width: 100%;
-    height: auto;
+    height: 600px;
     padding-bottom: 3%;
     flex-direction: column;
     align-items: center;
@@ -231,7 +243,7 @@
 @media screen and (max-width: 590px) {
   header {
     width: 100%;
-    height: auto;
+    height: 600px;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
@@ -266,17 +278,21 @@
     font-size: 18px;
   }
   .service-box {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .service-box p {
-    font-size: 22px;
-  }
-  .icon-hold i {
-    font-size: 110px;
+    font-size: 18px;
+    text-align: justify;
   }
 }
 @media screen and (max-width: 481px) {
+  header {
+    height: 600px;
+  }
+  .center-home {
+    align-content: center;
+  }
   .big-letters {
     font-size: 40px;
   }
@@ -289,7 +305,7 @@
   .title {
     font-size: 18px;
     width: 80%;
-    margin: 10px auto;
+    margin: 50px auto;
     width: 90%;
   }
   #basic-info {
@@ -321,15 +337,53 @@
     text-align: center;
     font-size: 35px;
   }
+  .service-box p {
+    font-size: 15px;
+  }
+  .icon-hold i {
+    font-size: 60px;
+  }
   .contact-responsive {
     width: 93% !important;
   }
   #form {
     width: 100%;
   }
-}
-@media screen and (max-width: 481px) {
   #contact-text-container {
     margin-top: 20px;
+  }
+  #contact-text-container a {
+    font-size: 15px;
+  }
+  #basic-info {
+    margin: 0px;
+  }
+  #information {
+    padding: 0px;
+  }
+  .big-letters {
+    font-size: 30px;
+  }
+  #im {
+    display: none;
+  }
+  #responsive-info-big-letters {
+    display: contents;
+  }
+  .icons {
+    display: none;
+  }
+  #icons-responsive {
+    display: block;
+  }
+  #icons-responsive a {
+    color: #fff;
+    padding: 0px 3px;
+  }
+}
+@media screen and (max-width: 321px) {
+  header {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
   }
 }/*# sourceMappingURL=responsive.css.map */
