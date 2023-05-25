@@ -10,9 +10,7 @@
 }
 @media screen and (max-width: 1280px) {
   .project {
-    width: 480px;
-    height: 270px;
-    margin: 15px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -285,6 +283,15 @@
     font-size: 18px;
     text-align: justify;
   }
+  .project {
+    margin: 10px 0px;
+    width: 90%;
+    height: 350px;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 481px) {
   header {
@@ -380,10 +387,16 @@
     color: #fff;
     padding: 0px 3px;
   }
+  .project {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 321px) {
   header {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+  }
+  .project {
+    height: 230px;
   }
 }/*# sourceMappingURL=responsive.css.map */

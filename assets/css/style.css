@@ -8,11 +8,6 @@
   scroll-behavior: smooth;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 p {
   color: #fff;
 }
@@ -239,30 +234,24 @@ nav ul li a:hover {
 
 .project-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
 
+.responisve {
+  width: 100%;
+  max-width: 480px;
+  height: 270px;
+}
+
 .project {
   border-radius: 10px;
   width: 480px;
-  height: 270px;
-  margin: 15px;
-  background-color: black;
-}
-
-#project1 {
-  background-image: url(../pictures/bane159.github.io_\ real.png);
-}
-
-#project2 {
-  background-image: url(../pictures/project2.png);
-}
-
-#project3 {
-  background-image: url(../pictures/project3.png);
+  height: 330px;
+  margin: 30px;
+  margin-bottom: 0px;
 }
 
 .services-responsive {

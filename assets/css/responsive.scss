@@ -11,9 +11,8 @@
 }
 @media screen and (max-width:1280px){ // for projects section
 .project{
-    width: 480px;
-    height: 270px;
-    margin: 15px;
+
+    margin-top: 40px;
 }
 
 }
@@ -276,6 +275,7 @@
             }
         }
     }
+ 
 
 }
 @media screen and (max-width:590px){ // home breakpoint idk y
@@ -326,7 +326,15 @@
             text-align: justify;
         }
     }
-
+    .project{
+        margin: 10px 0px;
+        width: 90%;
+        height: 350px;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
+    }
 
     
 }
@@ -432,10 +440,17 @@
 
         }
     }
+    .project{
+        height: 300px;
+    }
 
 }
 @media screen and (max-width:321px){
     header{
         clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
     }
+    .project{
+        height: 230px;
+    }
+
 }
