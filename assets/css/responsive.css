@@ -237,6 +237,14 @@
     border-bottom: 2px solid white;
     font-size: 22px;
   }
+  .service-box {
+    width: 90%;
+    height: auto;
+  }
+  .service-box p {
+    font-size: 18px;
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 590px) {
   header {
@@ -275,14 +283,6 @@
   #name-container h2 {
     font-size: 18px;
   }
-  .service-box {
-    width: 90%;
-    height: auto;
-  }
-  .service-box p {
-    font-size: 18px;
-    text-align: justify;
-  }
   .project {
     margin: 10px 0px;
     width: 90%;
@@ -292,8 +292,14 @@
     width: 100%;
     height: auto;
   }
+  .more {
+    aspect-ratio: 19/10.7;
+  }
 }
 @media screen and (max-width: 481px) {
+  .more p {
+    font-size: 30px;
+  }
   header {
     height: 600px;
   }
@@ -398,5 +404,8 @@
   }
   .project {
     height: 230px;
+  }
+  .more p {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=responsive.css.map */

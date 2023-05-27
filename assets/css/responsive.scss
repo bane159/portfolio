@@ -235,6 +235,7 @@
             font-size: 36px;
         }
     }
+    
     #form{
         width: 90%;
     }
@@ -275,7 +276,14 @@
             }
         }
     }
- 
+    .service-box{
+        width: 90%;
+        height: auto;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
 
 }
 @media screen and (max-width:590px){ // home breakpoint idk y
@@ -318,14 +326,7 @@
         }
       
     }
-    .service-box{
-        width: 90%;
-        height: auto;
-        p{
-            font-size: 18px;
-            text-align: justify;
-        }
-    }
+
     .project{
         margin: 10px 0px;
         width: 90%;
@@ -335,11 +336,19 @@
         width: 100%;
         height: auto;
     }
+    .more{
+        // width: 100%;       
+        aspect-ratio: 19/10.7;
+    }
 
     
 }
 @media screen and (max-width:481px){ //////// MAYBE CHANGE TO 426!!!!!!!!!!!!!!
-
+    .more{
+        p{
+            font-size: 30px;
+        }
+    }
     header{
         height: 600px;
     }
@@ -452,5 +461,9 @@
     .project{
         height: 230px;
     }
-
+    .more{
+        p{
+            font-size: 25px;
+        }
+    }
 }
