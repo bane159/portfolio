@@ -67,6 +67,9 @@ nav ul li a:hover {
   width: 250px;
   height: 250px;
   background-color: blue;
+  background-image: url(../pictures/author.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #name-container h1 {
