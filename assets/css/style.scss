@@ -389,12 +389,3 @@ footer{
 #icons-responsive{
     display: none;
 }
-.test{
-    width: 100%;
-    @include d-flex(space-around,center);
-}
-.test2{
-    width: 130px;
-    height: 130px;
-    background-color: red;
-}
