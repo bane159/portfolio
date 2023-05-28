@@ -444,18 +444,4 @@ footer {
 
 #icons-responsive {
   display: none;
-}
-
-.test {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.test2 {
-  width: 130px;
-  height: 130px;
-  background-color: red;
 }/*# sourceMappingURL=style.css.map */
